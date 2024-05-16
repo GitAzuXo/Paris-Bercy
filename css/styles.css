@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+html {
+    font-family: Helvetica;
+}
