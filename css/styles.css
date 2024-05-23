@@ -1,14 +1,110 @@
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-nav {
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 html {
     font-family: Helvetica;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+.navbar .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+.navbar .menu a:hover {
+    background-color: #575757;
+}
+.navbar .button {
+    background-color: #53492a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.navbar .button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist {
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    flex-direction: row;
+    width: 400px;
+    height: 220px;
+    background-color: #f6af2c; /* Couleur de fond, changez-la comme vous le souhaitez */
+    border-radius: 10px; /* Bords ronds */
+}
+
+.artist img{
+    width: 230px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    font-weight: bold;
+    padding: 10px; /* Espacement interne */
+}
+
+.text hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000; /* Ligne fine */
+    margin: 5px 0; /* Espacement autour de la ligne */
+}
+
+.artist button{
+    background-color: #53492a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.artist button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.highlights{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
 }
