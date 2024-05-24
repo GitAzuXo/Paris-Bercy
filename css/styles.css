@@ -7,12 +7,27 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 }
+
+.logo img{
+    width: 80px;
+}
+
+.logo p {
+    margin: 15px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
+
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
@@ -30,7 +45,7 @@ body {
     border-radius: 4px;
 }
 .navbar .menu a:hover {
-    background-color: #575757;
+    background-color: #e70e0e;
 }
 .navbar .button {
     background-color: #53492a;
