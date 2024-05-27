@@ -78,8 +78,23 @@ h1, h2 {
     flex-direction: row;
     width: 400px;
     height: 220px;
-    background-color: #f6af2c; /* Couleur de fond, changez-la comme vous le souhaitez */
     border-radius: 10px; /* Bords ronds */
+}
+
+.artist:nth-child(1){
+    background-color: #f6af2c;
+}
+
+.artist:nth-child(2){
+    background-color: #4567fd;
+}
+
+.artist:nth-child(3){
+    background-color: #a337a7;
+}
+
+.artist:nth-child(4){
+    background-color: #fd4d4d;
 }
 
 .artist img{
@@ -120,6 +135,21 @@ h1, h2 {
 
 .highlights{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     padding: 20px;
+}
+
+.briefdesc{
+    display: inline;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.shows {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }

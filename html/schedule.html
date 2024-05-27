@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor Arena - Schedule</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="../data/logo.png"></a><p>Accor Arena</p></div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <h1>Schedule</h1>
+        <div class="shows">
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button onclick="selectConcert('Francis Cabrel', 'August 15th 2024', '80')">Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+        </div>
+        <div class="shows">
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+            <div class="artist">
+                <div class="text">
+                    <h3>Francis Cabrel</h3>
+                    <hr>
+                    <h4>August 15th 2024</h4>
+                    <hr>
+                    <p>From 82€</p>
+                    <button>Book</button>
+                </div>
+                <img src="../data/cabrel.jpeg">
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    function selectConcert(name, date, price) {
+        sessionStorage.setItem('concertName', name);
+        sessionStorage.setItem('concertDate', date);
+        sessionStorage.setItem('concertPrice', price);
+        window.location.href = 'book.html';
+    }
+</script>
+</html>
