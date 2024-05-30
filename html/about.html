@@ -3,23 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Accor Arena</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        .navbar {
-            display: flex;
-            justify-content: flex-end;
-            background-color: #f8f8f8;
-            padding: 10px 20px;
-        }
-        .navbar a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #333;
         }
         .container {
             display: flex;
@@ -56,13 +46,17 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <h3>Accor Arena</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Page</a>
-        <a href="#" class="button">Button</a>
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="../data/logo.png"></a><p>Accor Arena</p></div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="about.html">The Venue</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="content">
             <h1>About</h1>
@@ -79,5 +73,36 @@
             <img src="https://via.placeholder.com/500x300" alt="Accor Arena">
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Accor Arena is a premier venue for live entertainment, hosting concerts, sports events, and more. Our mission is to provide unforgettable experiences for our audience.</p>
+                <a class="linkst" href="aboutus.html">More about the website.</a>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="about.html">The Venue</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/AccorArena/" target="_blank"><img src="../data/fb.png" alt="Facebook"></a>
+                    <a href="https://x.com/Accor_Arena" target="_blank"><img src="../data/twt.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/accor_arena/" target="_blank"><img src="../data/insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/accor-arena/?originalSubdomain=fr" target="_blank"><img src="../data/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.youtube.com/channel/UCCPH39dhQnw1RShARHDWa6A" target="_blank"><img src="../data/ytb.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Accor Arena. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
