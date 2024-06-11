@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accor Arena - Schedule</title>
+    <title>Schedule - Accor Arena</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
                 <a href="index.html">Home</a>
                 <a href="schedule.html">Schedule</a>
                 <a href="about.html">The Venue</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </header>
@@ -33,60 +33,60 @@
             </div>
             <div class="artist">
                 <div class="text">
-                    <h3>Francis Cabrel</h3>
+                    <h3>U2</h3>
                     <hr>
-                    <h4>August 15th 2024</h4>
+                    <h4>August 18th 2024</h4>
                     <hr>
-                    <p>From 82€</p>
-                    <button>Book</button>
+                    <p>From 99€</p>
+                    <button onclick="selectConcert('U2', 'August 18th 2024', '99')">Book</button>
                 </div>
-                <img src="../data/cabrel.jpeg">
+                <img src="../data/u2.jpg">
             </div>
             <div class="artist">
                 <div class="text">
-                    <h3>Francis Cabrel</h3>
+                    <h3>Star Academy</h3>
                     <hr>
-                    <h4>August 15th 2024</h4>
+                    <h4>August 25th 2024</h4>
                     <hr>
-                    <p>From 82€</p>
-                    <button>Book</button>
+                    <p>From 62€</p>
+                    <button onclick="selectConcert('Star Academy', 'August 25th 2024', '62')">Book</button>
                 </div>
-                <img src="../data/cabrel.jpeg">
+                <img src="../data/starac.jpg">
             </div>
         </div>
         <div class="shows">
             <div class="artist">
                 <div class="text">
-                    <h3>Francis Cabrel</h3>
+                    <h3>PSG - FCB Handball</h3>
                     <hr>
-                    <h4>August 15th 2024</h4>
+                    <h4>September 02nd 2024</h4>
                     <hr>
-                    <p>From 82€</p>
-                    <button>Book</button>
+                    <p>From 150€</p>
+                    <button onclick="selectConcert('PSG - FCB Handball', 'September 02nd 2024', '150')">Book</button>
                 </div>
-                <img src="../data/cabrel.jpeg">
+                <img src="../data/match.jpg">
             </div>
             <div class="artist">
                 <div class="text">
-                    <h3>Francis Cabrel</h3>
+                    <h3>Damso</h3>
                     <hr>
-                    <h4>August 15th 2024</h4>
+                    <h4>December 24th 2024</h4>
                     <hr>
                     <p>From 82€</p>
-                    <button>Book</button>
+                    <button onclick="selectConcert('Damso', 'December 24th 2024', '82')">Book</button>
                 </div>
-                <img src="../data/cabrel.jpeg">
+                <img src="../data/damso.jpg">
             </div>
             <div class="artist">
                 <div class="text">
-                    <h3>Francis Cabrel</h3>
+                    <h3>Florent Pagny</h3>
                     <hr>
-                    <h4>August 15th 2024</h4>
+                    <h4>January 12th 2025</h4>
                     <hr>
-                    <p>From 82€</p>
-                    <button>Book</button>
+                    <p>From 90€</p>
+                    <button onclick="selectConcert('Florent Pagny', 'January 12th 2025', '90')">Book</button>
                 </div>
-                <img src="../data/cabrel.jpeg">
+                <img src="../data/pagny.jpg">
             </div>
         </div>
     <footer>
@@ -120,13 +120,6 @@
             <p>&copy; 2024 Accor Arena. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../js/schedule.js"></script>
 </body>
-<script>
-    function selectConcert(name, date, price) {
-        sessionStorage.setItem('concertName', name);
-        sessionStorage.setItem('concertDate', date);
-        sessionStorage.setItem('concertPrice', price);
-        window.location.href = 'book.html';
-    }
-</script>
 </html>

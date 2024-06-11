@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/about.css">
-    <title>The Venue - Accor Arena</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Us - Accor Arena</title>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="../data/logo.png" alt="Accor Arena Logo"></a>
-                <p>Accor Arena</p>
-            </div>
+            <div class="logo"><a href="index.html"><img src="../data/logo.png"></a><p>Accor Arena</p></div>
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="schedule.html">Schedule</a>
@@ -23,24 +20,23 @@
     </header>
     <div class="container">
         <div class="content">
-            <h1>About Accor Arena</h1>
-            <h2>Premier Entertainment Venue in Paris</h2>
-            <p>
-                Accor Arena, located in the vibrant city of Paris, is a world-class venue that hosts a wide array of events, including concerts, sports competitions, and cultural exhibitions. With a seating capacity of up to 20,300, it is one of the largest indoor arenas in Europe.
-            </p>
-            <p>
-                Since its inauguration in 1984, Accor Arena has been at the heart of Parisian entertainment. It was originally known as Palais Omnisports de Paris-Bercy (POPB) and underwent a major renovation from 2014 to 2015, resulting in its current state-of-the-art facilities and rebranding as Accor Arena.
-            </p>
-            <p>
-                The arena is designed to offer an unparalleled experience for both performers and audiences. Its cutting-edge acoustics and flexible staging configurations make it an ideal venue for a variety of events, from intimate concerts to large-scale sporting events. 
-            </p>
-            <p>
-                Accor Arena is not just about entertainment; it also emphasizes sustainability and accessibility. The venue incorporates eco-friendly practices and ensures that it is accessible to all, with facilities designed to accommodate guests with disabilities.
-            </p>
-        </div>
-        <div class="image">
-            <img src="../data/popb ext.jpg" alt="Accor Arena Exterior">
-            <img src="../data/popb int.jpg" alt="Accor Arena Interior">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us. We'd love to hear from you!</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
         </div>
     </div>
     <footer>
@@ -74,5 +70,6 @@
             <p>&copy; 2024 Accor Arena. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
